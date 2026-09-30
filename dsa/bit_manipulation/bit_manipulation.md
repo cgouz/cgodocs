@@ -34,10 +34,24 @@ The first bit in a signed representation is the sign of the number, 0 for non-ne
 Two’s complement is used, which means that the opposite number of a number is calculated by first inverting all the bits in the number, and then increasing the number by one.
 The bit representation of the int number −43 is 11111111111111111111111111010101
 In an unsigned representation, only non-negative numbers can be used, but the upper bound for the values is larger.
-An unsigned variable of n bits can contain any integer between 0 and 2n −1.
+An unsigned variable of n bits can contain any integer between 0 and $2^n −1$.
 
-In C++, an unsigned int variable can contain any integer between 0 and 232 −1.
+In C++, an unsigned int variable can contain any integer between 0 and $2^32 −1$.
 There is a connection between the representations:
-A signed number −x equals an unsigned number 2n − x.
+A signed number −x equals an unsigned number $2^n − x$.
 For example, the following pseudo-code snippet shows that the signed number 
-x = −43 equals the unsigned number y = 232 −43: 
+x = −43 equals the unsigned number y = $2^32 −43$: 
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main () {
+
+    int x;
+    unsigned int y = x;
+
+    cout << x << endl; // -43
+    cout << y << endl; // 4294967253
+}
