@@ -43,15 +43,38 @@ For example, the following pseudo-code snippet shows that the signed number
 x = −43 equals the unsigned number y = $2^32 −43$: 
 
 ```cpp
-#include <iostream>
-
-using namespace std;
-
-int main () {
-
     int x;
     unsigned int y = x;
 
     cout << x << endl; // -43
     cout << y << endl; // 4294967253sub
-}
+```
+
+If a number is larger than the upper bound of the bit representation, the number will overflow. In a signed representation, the next number after  $2^{n-1} - 1$ is $-2^{n-1}$, and in an unsigned representation, the next number after  $2^{n -1}$ is 0. For example, consider the following pseudo-code snippet:
+
+```cpp
+    int a = 2147483647; // Maximum value for a 32-bit signed integer
+    
+    cout << "Initial value of a: " << a << endl;
+
+    a++; // This will cause an overflow
+    cout << "Value of a after incrementing: " << a << endl; // This
+```
+Initially, the value of x is $2^31 −1$. This is the largest value that can be stored in an int variable, so the next number after $2^{31} −1$ is −$2^{31}$.
+
+# Bitwise Operations:
+Below is the table to illustrate the result when the operation is performed using Bitwise Operators. Here 0s or 1s mean a sequence of 0 or 1 respectively.
+
+
+
+| Operator | Amal     | Natija |
+|----------|----------|--------|
+| XOR      | `X ^ 0s` | `X`    |
+| XOR      | `X ^ 1s` | `~X`   |
+| XOR      | `X ^ X`  | `0`    |
+| AND      | `X & 0s` | `0`    |
+| AND      | `X & 1s` | `X`    |
+| AND      | `X & X`  | `X`    |
+| OR       | `X \| 0s` | `X`   |
+| OR       | `X \| 1s` | `1s`  |
+| OR       | `X \| X`  | `X`   |
