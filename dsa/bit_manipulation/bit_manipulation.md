@@ -78,3 +78,17 @@ Below is the table to illustrate the result when the operation is performed usin
 | OR       | `X \| 0s` | `X`   |
 | OR       | `X \| 1s` | `1s`  |
 | OR       | `X \| X`  | `X`   |
+
+## Get Bit:
+This method is used to find the bit at a particular position(say i) of the given number N. The idea is to find the Bitwise AND of the given number and 2i that can be represented as (1 << i). If the value return is 1 then the bit at the ith position is set. Otherwise, it is unset.
+
+Below is the pseudo-code for the same:
+```cpp
+// Function to get the bit at the
+// ith position
+bool getBit(int num, int i) {
+    // Return true if the bit is
+    // set. Otherwise return false
+    return ((num & (1 << i)) != 0);
+}
+```
