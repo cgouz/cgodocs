@@ -108,3 +108,100 @@ int setBit(int num, int i)
     return num | (1 << i);
 }
 ```
+
+## Clear Bit:
+This method is used to clear the bit at a particular position(say i) of the given number N. The idea is to update the value of the given number N to the Bitwise AND of the given number N and the compliment of 2i that can be represented as ~(1 << i). If the value return is 1 then the bit at the ith position is set. Otherwise, it is unset.
+
+Below is the pseudo-code for the same:
+
+```cpp
+// Function to clear the ith bit of
+// the given number num
+int clearBit(int num, int i) {
+
+    // Create the mask for the ith
+    // bit unset
+    int mask = ~(1 << i);
+
+    // Return the updated value
+    return num & mask;
+}
+```
+Below is the program that implements the above functionalities:
+
+```cpp
+// C++ program to implement all the
+// above functionalities
+
+#include <bits/stdc++.h>
+using namespace std;
+
+// Function to get the bit at the
+// ith position
+bool getBit(int num, int i)
+{
+    // Return true if the ith bit is
+    // set. Otherwise return false
+    return ((num & (1 << i)) != 0);
+}
+
+// Function to set the ith bit of the
+// given number num
+int setBit(int num, int i)
+{
+    // Sets the ith bit and return
+    // the updated value
+    return num | (1 << i);
+}
+
+// Function to clear the ith bit of
+// the given number num
+int clearBit(int num, int i)
+{
+
+    // Create the mask for the ith
+    // bit unset
+    int mask = ~(1 << i);
+
+    // Return the updated value
+    return num & mask;
+}
+
+// Driver Code
+int main()
+{
+    // Given number N
+    int N = 70;
+
+    cout << "The bit at the 3rd position from LSB is: "
+         << (getBit(N, 3) ? '1' : '0')
+         << endl;
+
+    cout << "The value of the given number "
+         << "after setting the bit at "
+         << "LSB is: "
+         << setBit(N, 0) << endl;
+
+    cout << "The value of the given number "
+         << "after clearing the bit at "
+         << "LSB is: "
+         << clearBit(N, 0) << endl;
+
+    return 0;
+}
+```
+
+Output:
+```
+The bit at the 3rd position from LSB is: 0
+The value of the given number after setting the bit at LSB is: 71
+The value of the given number after clearing the bit at LSB is: 70
+```
+
+Time Complexity: O(1)
+Auxiliary Space: O(1)
+
+- Bitwise operations are prominent in embedded systems, control systems, etc where memory(data transmission/data points) is still an issue.
+- They are also useful in networking where it is important to reduce the amount of data, so booleans are packed together. Packing them together and taking them apart use bitwise operations and shift instructions.
+- Bitwise operations are also heavily used in the compression and encryption of data.
+- Useful in graphics programming, older GUIs are heavily dependent on bitwise operations like XOR(^) for selection highlighting and other overlays.
