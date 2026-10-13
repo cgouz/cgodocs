@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "citation": "",
+    "homepage": "",
+    "license": "",
+    "features": {
+        "translation": {
+            "languages": [
+                "ru",
+                "zh"
+            ],
+            "_type": "Translation"
+        }
+    },
+    "builder_name": "parquet",
+    "dataset_name": "multiun",
+    "config_name": "ru-zh",
+    "version": {
+        "version_str": "0.0.0",
+        "major": 0,
+        "minor": 0,
+        "patch": 0
+    },
+    "splits": {
+        "train": {
+            "name": "train",
+            "num_bytes": 4233867889,
+            "num_examples": 9557007,
+            "shard_lengths": [
+                1111890,
+                1116890,
+                1127890,
+                1124890,
+                1145890,
+                1122890,
+                1134889,
+                1149889,
+                521889
+            ],
+            "dataset_name": "multiun"
+        }
+    },
+    "download_size": 1984600328,
+    "dataset_size": 4233867889,
+    "size_in_bytes": 6218468217
+}
