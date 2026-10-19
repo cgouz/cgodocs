@@ -1,0 +1,3 @@
+/home/linus/src/cgodocs/dasturlash/vositalar/cmake/01_hello_world/build/CMakeFiles/executable.dir
+/home/linus/src/cgodocs/dasturlash/vositalar/cmake/01_hello_world/build/CMakeFiles/edit_cache.dir
+/home/linus/src/cgodocs/dasturlash/vositalar/cmake/01_hello_world/build/CMakeFiles/rebuild_cache.dir

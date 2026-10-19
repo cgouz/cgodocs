@@ -1,0 +1,1 @@
+/usr/bin/cc  -pthread -lm -rdynamic CMakeFiles/executable.dir/main.c.o -o executable 
