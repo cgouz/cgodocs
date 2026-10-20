@@ -58,37 +58,37 @@ import "fmt"
 // }
 
 // --------------------2
-// func licenseKeyFormatting(s string, k int) string {
-// 	result := make([]byte, 0, len(s))
+func licenseKeyFormatting(s string, k int) string {
+	result := make([]byte, 0, len(s))
 
-// 	count := 0
+	count := 0
 
-// 	for i := len(s) - 1; i >= 0; i-- {
-// 		char := s[i]
+	for i := len(s) - 1; i >= 0; i-- {
+		char := s[i]
 
-// 		if char == '-' {
-// 			continue
-// 		}
+		if char == '-' {
+			continue
+		}
 
-// 		if count == k {
-// 			result = append(result, '-')
-// 			count = 0
-// 		}
+		if count == k {
+			result = append(result, '-')
+			count = 0
+		}
 
-// 		if char >= 'a' && char <= 'z' {
-// 			char -= 'a' - 'A'
-// 		}
+		if char >= 'a' && char <= 'z' {
+			char -= 'a' - 'A'
+		}
 
-// 		result = append(result, char)
-// 		count++
-// 	}
+		result = append(result, char)
+		count++
+	}
 
-// 	for left, right := 0, len(result)-1; left < right; left, right = left+1, right-1 {
-// 		result[left], result[right] = result[right], result[left]
-// 	}
+	for left, right := 0, len(result)-1; left < right; left, right = left+1, right-1 {
+		result[left], result[right] = result[right], result[left]
+	}
 
-// 	return string(result)
-// }
+	return string(result)
+}
 
 //----------------------3
 func licenseKeyFormatting(s string, k int) string {
