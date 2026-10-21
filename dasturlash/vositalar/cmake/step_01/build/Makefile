@@ -126,7 +126,7 @@ Tutorial: cmake_check_build_system
 
 # fast build rule for target.
 Tutorial/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/build
+	$(MAKE) $(MAKESILENT) -f Tutorial/CMakeFiles/Tutorial.dir/build.make Tutorial/CMakeFiles/Tutorial.dir/build
 .PHONY : Tutorial/fast
 
 #=============================================================================
@@ -139,56 +139,8 @@ MathFunctions: cmake_check_build_system
 
 # fast build rule for target.
 MathFunctions/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MathFunctions.dir/build.make CMakeFiles/MathFunctions.dir/build
+	$(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/build
 .PHONY : MathFunctions/fast
-
-MathFunctions/MathFunctions.o: MathFunctions/MathFunctions.cxx.o
-.PHONY : MathFunctions/MathFunctions.o
-
-# target to build an object file
-MathFunctions/MathFunctions.cxx.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MathFunctions.dir/build.make CMakeFiles/MathFunctions.dir/MathFunctions/MathFunctions.cxx.o
-.PHONY : MathFunctions/MathFunctions.cxx.o
-
-MathFunctions/MathFunctions.i: MathFunctions/MathFunctions.cxx.i
-.PHONY : MathFunctions/MathFunctions.i
-
-# target to preprocess a source file
-MathFunctions/MathFunctions.cxx.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MathFunctions.dir/build.make CMakeFiles/MathFunctions.dir/MathFunctions/MathFunctions.cxx.i
-.PHONY : MathFunctions/MathFunctions.cxx.i
-
-MathFunctions/MathFunctions.s: MathFunctions/MathFunctions.cxx.s
-.PHONY : MathFunctions/MathFunctions.s
-
-# target to generate assembly for a file
-MathFunctions/MathFunctions.cxx.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MathFunctions.dir/build.make CMakeFiles/MathFunctions.dir/MathFunctions/MathFunctions.cxx.s
-.PHONY : MathFunctions/MathFunctions.cxx.s
-
-Tutorial/Tutorial.o: Tutorial/Tutorial.cxx.o
-.PHONY : Tutorial/Tutorial.o
-
-# target to build an object file
-Tutorial/Tutorial.cxx.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/Tutorial/Tutorial.cxx.o
-.PHONY : Tutorial/Tutorial.cxx.o
-
-Tutorial/Tutorial.i: Tutorial/Tutorial.cxx.i
-.PHONY : Tutorial/Tutorial.i
-
-# target to preprocess a source file
-Tutorial/Tutorial.cxx.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/Tutorial/Tutorial.cxx.i
-.PHONY : Tutorial/Tutorial.cxx.i
-
-Tutorial/Tutorial.s: Tutorial/Tutorial.cxx.s
-.PHONY : Tutorial/Tutorial.s
-
-# target to generate assembly for a file
-Tutorial/Tutorial.cxx.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/Tutorial/Tutorial.cxx.s
-.PHONY : Tutorial/Tutorial.cxx.s
 
 # Help Target
 help:
@@ -200,12 +152,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... MathFunctions"
 	@echo "... Tutorial"
-	@echo "... MathFunctions/MathFunctions.o"
-	@echo "... MathFunctions/MathFunctions.i"
-	@echo "... MathFunctions/MathFunctions.s"
-	@echo "... Tutorial/Tutorial.o"
-	@echo "... Tutorial/Tutorial.i"
-	@echo "... Tutorial/Tutorial.s"
 .PHONY : help
 
 

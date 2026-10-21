@@ -1,4 +1,8 @@
-/home/linus/src/cgodocs/dasturlash/vositalar/cmake/step_01/build/CMakeFiles/Tutorial.dir
-/home/linus/src/cgodocs/dasturlash/vositalar/cmake/step_01/build/CMakeFiles/MathFunctions.dir
 /home/linus/src/cgodocs/dasturlash/vositalar/cmake/step_01/build/CMakeFiles/edit_cache.dir
 /home/linus/src/cgodocs/dasturlash/vositalar/cmake/step_01/build/CMakeFiles/rebuild_cache.dir
+/home/linus/src/cgodocs/dasturlash/vositalar/cmake/step_01/build/Tutorial/CMakeFiles/Tutorial.dir
+/home/linus/src/cgodocs/dasturlash/vositalar/cmake/step_01/build/Tutorial/CMakeFiles/edit_cache.dir
+/home/linus/src/cgodocs/dasturlash/vositalar/cmake/step_01/build/Tutorial/CMakeFiles/rebuild_cache.dir
+/home/linus/src/cgodocs/dasturlash/vositalar/cmake/step_01/build/MathFunctions/CMakeFiles/MathFunctions.dir
+/home/linus/src/cgodocs/dasturlash/vositalar/cmake/step_01/build/MathFunctions/CMakeFiles/edit_cache.dir
+/home/linus/src/cgodocs/dasturlash/vositalar/cmake/step_01/build/MathFunctions/CMakeFiles/rebuild_cache.dir
