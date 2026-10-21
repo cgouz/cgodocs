@@ -1,0 +1,3 @@
+/home/linus/src/cgodocs/dasturlash/vositalar/cmake/step_00/build/CMakeFiles/hello.dir
+/home/linus/src/cgodocs/dasturlash/vositalar/cmake/step_00/build/CMakeFiles/edit_cache.dir
+/home/linus/src/cgodocs/dasturlash/vositalar/cmake/step_00/build/CMakeFiles/rebuild_cache.dir
