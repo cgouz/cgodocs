@@ -1,1 +1,0 @@
-/usr/bin/cc -O3 -DNDEBUG CMakeFiles/myapp.dir/src/main.c.o -o myapp  libmyapp_core.a 

@@ -1,1 +1,0 @@
-/usr/bin/cc -O3 -DNDEBUG CMakeFiles/test_math.dir/tests/test_math.c.o -o test_math  libmyapp_core.a 

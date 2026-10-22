@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmyapp_core.a CMakeFiles/myapp_core.dir/src/math_utils.c.o CMakeFiles/myapp_core.dir/src/platform.c.o
-/usr/bin/ranlib libmyapp_core.a
